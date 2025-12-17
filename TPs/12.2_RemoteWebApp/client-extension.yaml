@@ -1,0 +1,8 @@
+event-list-custom-element:
+  name: Liste des Événements REST
+  type: customElement
+  friendlyURLMapping: event-list-app
+  htmlElementName: liferay-event-list
+  instanceable: true
+  url: index.js
+  useESM: true
