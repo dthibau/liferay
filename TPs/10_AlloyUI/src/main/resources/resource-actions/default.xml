@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE resource-action-mapping PUBLIC "-//Liferay//DTD Resource Action Mapping 7.4.0//EN" "http://www.liferay.com/dtd/liferay-resource-action-mapping_7_4_0.dtd">
+<resource-action-mapping>
+    <portlet-resource>
+        <portlet-name>org_formation_event_EventPortlet</portlet-name>
+        <permissions>
+            <supports>
+                <action-key>ADD_EVENT</action-key>
+                <action-key>VIEW</action-key>
+            </supports>
+            <site-member-defaults>
+                <action-key>VIEW</action-key>
+                <action-key>ADD_EVENT</action-key>
+            </site-member-defaults>
+        </permissions>
+    </portlet-resource>
+
+</resource-action-mapping>
