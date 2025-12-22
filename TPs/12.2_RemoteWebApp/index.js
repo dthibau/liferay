@@ -13,7 +13,7 @@ class LiferayEventList extends HTMLElement {
     async fetchEvents() {
         try {
             // L'URL relative fonctionne car l'app est intégrée au portail
-            const response = await fetch('/o/events-headless/v1.0/events?groupId=20117', {
+            const response = await fetch('/o/events-headless/v1.0/events?groupId=32999', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
