@@ -12,8 +12,14 @@ class LiferayEventList extends HTMLElement {
 
     async fetchEvents() {
         try {
+            // 1. Récupération dynamique du contexte [cite: 17, 21]
+            const groupId = Liferay.ThemeDisplay.getScopeGroupId();
+            const apiPath = '/o/events-headless/v1.0/events';
+        
+            // 2. Construction de l'URL sans valeur en dur
+            const url = `${apiPath}?groupId=${groupId}`;
             // L'URL relative fonctionne car l'app est intégrée au portail
-            const response = await fetch('/o/events-headless/v1.0/events?groupId=32999', {
+            const response = await fetch(url, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
