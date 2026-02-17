@@ -1,0 +1,17 @@
+Mettre au point le service.xml 
+
+buildService
+
+Vérifier les champs dans tables.sql
+
+Editer portlet-model-hints.xml 
+
+buildService 
+
+Vérifier les champs dans tables.sql
+
+Si bon déploiement 
+
+Vérifier le contenu de la table ServiceComponent
+
+Si la table existe 
