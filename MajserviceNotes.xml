@@ -12,6 +12,18 @@ Vérifier les champs dans tables.sql
 
 Si bon déploiement 
 
-Vérifier le contenu de la table ServiceComponent
+Vérifier le contenu de la table ServiceComponent, ou sont stocké le nom du service et un buildNumber
 
-Si la table existe 
+Si on modifie le fichier service.xml et qu'on génère un table SQL
+
+Modifier le buildNumber dans service.properties
+
+si la table existe, les create table ne fonctionne pas.
+
+Si jamais on drop à la main.
+Vous avez pas le droit de faire un upgrade (environnement de production )=  Code Java avec un Upgrader 
+
+Propriété 
+upgrade.database.auto.run=true
+
+Autorise l'upgrade dans l'environnement de dév.
